@@ -5,43 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-	<style>
-     .grid-container {
-     	 display: grid;
-         background-color: white;
-         padding: 10px;
-         grid: 200px 200px 200px / 200px 200px 200px;
-         grid-gap: 20px;
-         
-
-     }
-     .item {
-  background-color: white;
-  border: 5px solid blue;
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-
-     }
-
-		
-	</style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="grid-container">
-		
-      <div class="item">1</div>
-      <div class="item">2</div>
-      <div class="item">3</div>
-      <div class="item">4</div>
-      <div class="item">5</div>
-      <div class="item">6</div>
-      <div class="item">7</div>
-      <div class="item">8</div>
-      <div class="item">9</div>
+	    <div class="header">
+        <ul class="mainNav">
+            <li class="menuItem"><a class="link">Le principe</a></li>
+            <li class="menuItem"><a class="link">Donner</a></li>
+            <li class="menuItem"><a class="link">Annonces</a></li>
+            <li class="menuItem"><a class="link">Contact</a></li>
+        </ul>
+    </div>
+    <div class="top_image">
+        <img src="DonDon2.png">
+    </div>
+
+<!----------------------------Carousel------------------------>
+     <div class="container">
+        <div class="slideshow">
+            <div class="slide">
+                <img src="img/photo-espresso.png">
+            </div>
+           
+            <div class="slide">
+                <img src="img/photo-home-tv.png">
+            </div>
+            
+            <div class="slide">
+                <img src="img/photo-house-plant.jpeg">
+            </div>
+
+             <div class="slide">
+                <img src="img/photo-perfect-shirt.png">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <button class="prev" onclick="plusSlides(-1)">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <button class="next" onclick="plusSlides(1)">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <div class="filler"></div>
+    </div>
 
 
-	</div>
-
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/cc82d3563a.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+<!-----------------------------------------End of Carousel------------------------------------------------- -->
 </body>
 </html>
